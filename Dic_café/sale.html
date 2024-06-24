@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>DIC cafe </title>
+    <!--etiqueta de enlace-->
+    <link href="../css/sale.css" rel="stylesheet">
+    <link href="../css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+</head>
+<!-- comienza el body-->
+
+<body>
+    <header>
+        <nav class="header_nav">
+            <a href="index.html" class="logo"><img src="../imagenes/sample_logo_k.png"></a>
+            <ul class="global_nav">
+                <a href="index.html" class="global_nav_item">
+                    <li>Home</li>
+                </a>
+                <a href="#" class="global_nav_item">
+                    <li>Menu</li>
+                </a>
+                <a href="contact.html" class="global_nav_item">
+                    <li>Contacto</li>
+                </a>
+
+            </ul>
+        </nav>
+    </header>
+    <section class="section_inner">
+        <div class="section_title">
+            <h1>Venta de café en granos</h1>
+        </div>
+    </section>
+    <!-- inicio de section-->
+    <section class="section_inner menu_section ">
+        <div class="center">
+            <h1 class="menu_title">Gama de productos</h1>
+        </div>
+        <ul class="menu_list coffee_menu">
+            <li class="caffee_menu_list_item">
+                <div class="caffee_menu_content">
+                    <h2 class="menu_item_title">Mezcla original 200 g</h2>
+                    <p class="caffee_menu_price">500 yenes</p>
+                </div>
+                <img src="../imagenes/sample_cafe1.jpg" class="coffee_menu_image">>
+            </li>
+
+            <li class="caffee_menu_list_item">
+                <div class="caffee_menu_content">
+                    <h2 class="menu_item_title">Mezcla original 500 g</h2>
+                    <p class="caffee_menu_price">900 yenes</p>
+                </div>
+                <img src="../imagenes/sample_cafe1.jpg" class="coffee_menu_image">>
+
+            </li>
+            <li class="caffee_menu_list_item">
+                <div class="caffee_menu_content">
+                    <h2 class="menu_item_title">Mezcla especial 200 g</h2>
+                    <p class="caffee_menu_price">700 yenes</p>
+                </div>
+                <img src="../imagenes/sample_cafe3.jpg" class="coffee_menu_image">>
+
+            </li>
+            <li class="caffee_menu_list_item">
+                <div class="caffee_menu_content">
+                    <h2 class="menu_item_title">Mezcla especial 500 g</h2>
+                    <p class="caffee_menu_price">1200 yenes</p>
+                </div>
+                <img src="../imagenes/sample_cafe3.jpg" class="coffee_menu_image">>
+            </li>
+        </ul>
+        <h2>Gastos de envio</h2>
+        <ul>
+            <li>500 yenes por gastos de envío si el importe total es inferior a 2000 yenes.</li>
+            <li>250 yenes por un mínimo de 2.000 yenes.</li>
+            <li>Gratuito a partir de 3.000 yenes.</li>
+        </ul>
+        <!--termina section-->
+    </section>
+    </article>
+    <section class="section_inner">
+        <h2 class="menu_item_title">Pedir</h2>
+        <form>
+            <p>Seleccione un producto</p>
+            <div>
+                <select id="product" required>
+                    <option>Por favor, seleccione</option>
+                    <option value="1">Mezcla original 200g ¥ 500</option>
+                    <option value="2">Mezcla original 500g ¥ 900</option>
+                    <option value="3">Mezcla especial 200g ¥ 700</option>
+                    <option value="4">Mezcla especial 500g ¥ 1200</option>
+                </select>
+                <p>Seleccione la cantidad</p>
+                <input type="number" min="1" max="5" id="number" required>
+            </div>
+            <br>
+            <input type="button" class="btn" value="importe total" onclick="calc()">
+            <input type="button" class="btn" value="añadir" onclick="add()">
+        </form>
+    </section>
+
+    <!--piede pagina-->
+
+    <footer class="footer">
+        <nav>
+            <ul class="footer_nav">
+                <a href="index.html" class="footer_nav_item">
+                    <li>Home</li>
+                </a>
+                <a href="#" class="footer_nav_item">
+                    <li>Menu</li>
+                </a>
+                <a href="contact.html" class="footer_nav_item">
+                    <li>Contact</li>
+                </a>
+                <a href="index.html" class="footer_nav_item"> </a>
+
+                <li>
+                    <img src="../imagenes/sample_logo_w.png" class="footer_logo">
+                </li>
+        </nav>
+        <p class="footer_right"><span>&copy; DIVIC Corp. All RIGHTS RESERVED.</span></p>
+        </nav>
+    </footer>
+    <script src="../JavaScript/script.js"></script>
+    <!--termina el dody-->
+</body>
+
+</html>
